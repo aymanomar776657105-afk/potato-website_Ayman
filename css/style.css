@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: antiquewhite;
+    font-family: var(--firest-font);
+}
+
+:root {
+    --font-hover-color--: burlywood;
+    --firest-font: "Playwrite MX Guides", cursive;
+    --second-font: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/login_1jpg.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-attachment: scroll;
+    /* height: 100vh; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 50%;
+    width: 30%;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.9;
+    /* filter: blur(10px); */
+}
+
+main h1 {
+    padding: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 50px;
+
+
+}
+
+main form input {
+    width: 400px;
+    padding: 7px;
+    margin: 10px 25px;
+    border: 2px solid black;
+    outline: none;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(211, 178, 178);
+    /* filter: blur(); */
+    opacity: 0.7;
+    color: black;
+}
+
+main form input ::placeholder {
+    color: rgb(17, 17, 17);
+    text-align: center;
+}
+
+main form button {
+    width: 190px;
+    padding: 6px;
+    color: black;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+main form button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: antiquewhite;
+    border: 1px solid rgb(229, 207, 207);
+}
+
+main a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+main a:hover {
+    text-decoration: none;
+    color: rgb(147, 135, 222);
+}
+
+@media (max-width:1350px) {
+
+    /* body{
+        background-image: none;
+        background-color: aqua;
+    } */
+    main form input {
+        width: 300px;
+        display: flex;
+    }
+
+    main form button {
+        width: 120px;
+    }
+
+    main {
+        width: 40%;
+    }
+}
+
+@media (max-width:770px){
+    /* body{
+        /* background-image: none;
+        background-color: aqua; 
+    } */
+    main form input {
+        width: 250px;
+        display: flex;
+    }
+
+    main form button {
+        width: 120px;
+    }
+
+    main {
+        width: 70%;
+    }
+}

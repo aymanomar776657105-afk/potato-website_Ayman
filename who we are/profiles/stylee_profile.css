@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: antiquewhite;
+    font-family: var(--firest-font);
+
+}
+
+:root {
+    --font-hover-color--: burlywood;
+    --firest-font: "Playwrite MX Guides", cursive;
+    --second-font: "Open Sans", sans-serif;
+}
+
+main section {
+    margin: 10px 0 0 0;
+}
+
+main section i {
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #9b7e6c;
+    padding: 5px;
+    padding-top: 10px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+main section{
+    margin-top: 65px;
+    /* margin-left: 80px; */
+}
+main section i:hover {
+    background-color: #010101;
+    color: aqua;
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px rgba(139, 171, 178, 0.516);
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0D0D;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    height: 15%;
+    border-radius: 20px;
+}
+
+header h1 {
+    margin-left: 170px;
+    color: antiquewhite;
+}
+
+header .minue{
+    display: none;
+}
+header .logo {
+    width: 90px;
+    height: 90px;
+    background-image: url(/images/login_2.jpg);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
+
+header ul {
+    margin-right: 30px;
+}
+
+:root {
+    --font-color--: burlywood;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    /* background-color: chartreuse; */
+    border-radius: 10px;
+    transition: 0.5s;
+    color: var(--font-hover-color--);
+
+}
+
+header ul li:hover {
+    color: var(--font-hover-color--);
+    transform: translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+header ul li a {
+    display: inline-block;
+    /* background-color: chartreuse; */
+    border-radius: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--font-hover-color--);
+}
+
+.contiuner {
+    /* width: 100%;
+    height: 80%;
+    background-color: antiquewhite;
+    display: flex; */
+
+    width: 100%;
+    height: 80vh; /* يفضل استخدام vh لضمان أن الارتفاع يملأ الشاشة */
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center; /* لتوسيط المحتوى إذا كان هناك مساحة فارغة */
+}
+
+.contiuner aside {
+    /* width: 45%;
+    height: 10%;
+    background-color: chartreuse;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover; */
+
+    width: 45%;
+    height: 100%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contiuner main {
+    width: 45%;
+    height: 100%;
+    /* background-color:chocolate; */
+    margin-left: 5%;
+}
+
+.contiuner aside img {
+    /* display: flex; */
+    width: fit-content;
+    height: 100%;
+    border-radius: 30px;
+    margin: 4px;
+    padding: 10px 0px;
+
+}
+
+.contiuner main p {
+    text-align: justify;
+    font-size: larger;
+    padding: 5px;
+    padding-top: 10px;
+    line-height: 30px;
+    color: #0D0D0D;
+    width:100%;
+    height: 80%;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+footer {
+    width: 100%;
+    height: 5vh;
+    background-image: linear-gradient(30deg, #0D0D0D, #0d0d0dc7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1135px) {
+    /* إخفاء القائمة والأيقونة في الهيدر */
+    header ul {
+        display: none;
+    }
+    aside img {
+        display: none;
+    }
+    
+    /* جعل حاوية النص تأخذ المساحة الكاملة */
+    .contiuner {
+        /* إزالة display: flex; لتجنب المشاكل */
+        display: block; 
+    }
+    .contiuner aside {
+        /* إخفاء حاوية الصورة بالكامل */
+        display: none;
+    }
+    .contiuner main {
+        /* جعل حاوية النص تأخذ العرض الكامل */
+        width: 100%;
+        margin-left: 0;
+    }
+    /* جعل الفقرة تأخذ العرض الكامل وتضيف هوامش داخلية */
+    .contiuner main p {
+        width: 100%;
+        padding: 0 15px; 
+    }
+}
